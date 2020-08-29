@@ -278,6 +278,9 @@ public class MarioGame {
                     break;
                 }
             }
+            
+            //Print mario's coordinates every game loop in csv format. Note xy origin is top left corner
+            System.out.println(this.world.mario.x + "," + this.world.mario.y);
         }
         return new MarioResult(this.world, gameEvents, agentEvents);
     }
